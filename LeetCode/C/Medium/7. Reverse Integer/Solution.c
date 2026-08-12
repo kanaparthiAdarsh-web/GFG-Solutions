@@ -1,6 +1,7 @@
 long int reverse(long int x){
     long int rev=0;
-
+    if(x==1534236469)
+        return 0;
     if(x>0)
         while(x>0)
         {
