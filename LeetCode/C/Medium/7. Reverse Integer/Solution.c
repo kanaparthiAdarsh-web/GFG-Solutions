@@ -1,4 +1,4 @@
-int reverse(int x){
+long int reverse(long int x){
     long int rev=0;
 
     if(x>0)
