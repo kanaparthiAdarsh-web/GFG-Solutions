@@ -1,5 +1,5 @@
 int reverse(int x){
-    int rev=0;
+    long int rev=0;
 
     if(x>0)
         while(x>0)
