@@ -8,8 +8,8 @@
 Array, Binary Search, Breadth-First Search, Union-Find, Heap (Priority Queue), Matrix
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 435 ms
+- **Memory:** 122.8 MB
 
 ---
 
