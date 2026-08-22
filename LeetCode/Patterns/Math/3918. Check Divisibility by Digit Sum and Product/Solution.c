@@ -7,5 +7,5 @@ bool checkDivisibility(int n) {
         sum+=digits;
         product*=digits;
     }
-    return((sum+product == n)? true : false);
+    return((n%(sum+product))? false : true);
 }
