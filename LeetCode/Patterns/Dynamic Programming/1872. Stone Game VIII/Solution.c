@@ -1,4 +1,3 @@
-#include <stdlib.h>
 
 int stoneGameVIII(int* stones, int stonesSize) {
     int* prefix = (int*)malloc(sizeof(int) * stonesSize);
@@ -6,12 +5,9 @@ int stoneGameVIII(int* stones, int stonesSize) {
     for (int i = 1; i < stonesSize;prefix[i] = prefix[i - 1] + stones[i],i++);
     int dp = prefix[stonesSize - 1];
 
-    for (int i = stonesSize - 2; i >= 1; i--) {
-        int take_current = prefix[i] - dp;
-        if (take_current > dp) {
+    for (int i = stonesSize - 2,take_current=prefix[i]-dp; i >= 1;take i--)
+        if (take_current > dp)
             dp = take_current;
-        }
-    }
 
     free(prefix);
     return dp;
