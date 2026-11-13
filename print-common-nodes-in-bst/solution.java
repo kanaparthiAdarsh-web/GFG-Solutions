@@ -1,13 +1,11 @@
 /*
  * AnyPush — AI explanation
- * This solution finds common nodes by performing a simultaneous in-order traversal on both BSTs. It uses two stacks to iteratively generate the next smallest node from each tree, effectively treating them as sorted sequences. We compare the current nodes (peeked from stacks); if values match, we add to the result and advance both traversals. If one value is smaller, we advance only that tree's traversal to seek a larger element.
+ * This solution efficiently finds common nodes by performing a simultaneous in-order traversal on both BSTs. We use two stacks to iteratively simulate in-order traversal, effectively treating the trees as sorted sequences. At each step, we compare the smallest available nodes from both trees: if values match, we add to the result and advance both; otherwise, we advance the traversal for the tree with the smaller current node. This approach processes nodes on-the-fly.
  *
- * Time complexity is O(N1 + N2), as each node is visited and processed at most once.
- * Space complexity is O(H1 + H2) for the two traversal stacks, where H is the height of the respective BST.
+ * Time Complexity: O(N1 + N2), as each node is visited and pushed/popped at most a constant number of times.
+ * Space Complexity: O(H1 + H2), where H1 and H2 are the heights of the BSTs, as stacks store the path to the current node.
  *
- * This approach is efficient as it avoids materializing full sorted lists of nodes for both BSTs, processing elements on-demand. This limits auxiliary space to the maximum height of the trees rather than the total number of nodes.
- *
- * A simpler alternative would be to flatten both trees into sorted arrays and then find common elements. However, that would consume O(N1 + N2) auxiliary space, whereas this iterative method uses O(Height) stack space.
+ * This iterative approach was chosen to optimize space. Our earlier considerations included converting both BSTs to sorted ArrayLists and then finding common elements. While simple, that approach would incur O(N1 + N2) auxiliary space regardless of tree structure. This current method, however, limits its space footprint to O(H1 + H2), achieving O(logN) for balanced trees, a significant improvement in common scenarios.
  */
 
 class Solution {
@@ -29,9 +27,8 @@ class Solution {
                 curr2 = curr2.left;
             }
 
-            if (s1.isEmpty() || s2.isEmpty()) {
+            if (s1.isEmpty() || s2.isEmpty())
                 break;
-            }
 
             Node top1 = s1.peek();
             Node top2 = s2.peek();
