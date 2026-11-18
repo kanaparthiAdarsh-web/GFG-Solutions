@@ -22,8 +22,10 @@
 AnyPush tracked this solution across **1 step**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-14)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-14)_  
    This solution employs a greedy strategy to find the maximum equal sum. It starts by calculating the total sum of elements in each of the three stacks. Then, it 
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
