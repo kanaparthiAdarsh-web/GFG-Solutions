@@ -26,8 +26,10 @@
 AnyPush tracked this solution across **1 step**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-18)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-18)_  
    This solution efficiently calculates the XOR sum of numbers in a range [L, R] by leveraging the cyclic pattern of XOR sums from 1 to N. The `xorTill(n)` helper 
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
