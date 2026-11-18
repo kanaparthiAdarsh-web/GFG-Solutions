@@ -20,10 +20,12 @@
 AnyPush tracked this solution across **2 steps**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-15)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-15)_  
    This solution calculates the sum of *individual digit values* across all possible subsequences of the input string.
-2. **Step 2 · improved** _(2026-11-15)_ — `v2.java`  
+2. **Step 2 · improved** _(2026-11-15)_  
    This solution efficiently calculates the sum of individual digits across all subsequences of the input string, modulo 10^9+7. The core idea relies on a combinat
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
