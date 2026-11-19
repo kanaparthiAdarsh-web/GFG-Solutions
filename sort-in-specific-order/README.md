@@ -20,8 +20,10 @@
 AnyPush tracked this solution across **1 step**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-19)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-19)_  
    The solution sorts numbers such that even numbers come first in ascending order, followed by odd numbers in descending order. This is achieved by temporarily ne
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
