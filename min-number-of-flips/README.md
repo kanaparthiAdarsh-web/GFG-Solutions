@@ -20,8 +20,10 @@
 AnyPush tracked this solution across **1 step**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-20)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-20)_  
    This solution efficiently finds the minimum flips required to transform a binary string into an alternating pattern. The core idea is that only two alternating 
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
