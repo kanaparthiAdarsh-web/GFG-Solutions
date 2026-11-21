@@ -19,8 +19,10 @@
 AnyPush tracked this solution across **1 step**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-21)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-21)_  
    This solution employs a two-pointer (sliding window) technique. We expand the window from the right, accumulating `currSum`. Once `currSum` exceeds `x`, we shri
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
