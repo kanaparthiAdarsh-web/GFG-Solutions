@@ -30,8 +30,10 @@
 AnyPush tracked this solution across **1 step**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-23)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-23)_  
    This solution efficiently finds the character at a given `pos` in the infinite string by exploiting its recursive definition `S_k = S_{k-1} + C_k + S_{k-1}`. We
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
