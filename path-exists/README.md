@@ -21,8 +21,10 @@
 AnyPush tracked this solution across **1 step**.
 
 ## Journey
-1. **Step 1 · first solve** _(2026-11-28)_ — `v1.java`  
+1. **Step 1 · first solve** _(2026-11-28)_  
    This solution utilizes Breadth-First Search (BFS) starting from vertex 'u' to check if 'v' is reachable. It systematically explores the graph layer by layer, ma
+
+> ✅ **Merged** — the per-step files were collapsed into `solution.java`. The journey above is the kept record.
 
 ## Current solution
 See [`solution.java`](./solution.java).
